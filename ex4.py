@@ -56,4 +56,3 @@ def ex5():                                             #Generate a random passwo
     password = ''.join(random.choices(characters, k=length))
     print (password)
 
-ex4()
