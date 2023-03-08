@@ -1,14 +1,16 @@
 import math
 import random
 import string
-def ex1():                                             #
+
+
+def ex1():                                             #Check if a number is a perfect square
     number = int(input("Input a number:"))
     if (math.isqrt(number) ** 2 == number):
         print("number is a perfect square")
     else:
         print("number is not a perfect square")
 
-def ex2():                                             #
+def ex2():                                             #Find the sum of the digits of a number
     number = input("Input a number:")
     string = str(number)
     sum = 0
@@ -16,15 +18,15 @@ def ex2():                                             #
         sum += int(string[i])
     print(sum)
 
-def ex3():                                             #
+def ex3():                                             #Check if a number is a palindrome or not
     number = input("Input a number:")
     if number == number[::-1]:
         print("The number is a palindrome")
     else:
         print("The number is not a palindrome")
 
-def ex4():                                            #
-    phrase = input("Input a phrase")
+def ex4():                                            #Find the most common word in a phrase
+    phrase = input("Input a phrase: ")
     # Convert the phrase to lowercase to ensure case-insensitivity
     phrase = phrase.lower()
 
@@ -48,7 +50,7 @@ def ex4():                                            #
 
     print(most_common_word)
 
-def ex5():                                             #
+def ex5():                                             #Generate a random password
     length = int(input("Input password length:"))
     characters = string.ascii_letters + string.digits + string.punctuation
     password = ''.join(random.choices(characters, k=length))
