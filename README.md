@@ -1,6 +1,6 @@
 # Exercices_4
 
-This repository consists of 5 exercices:
+This repository consists of 5 exercices and their corresponding unit tests:
 
 1.Check if a number is a perfect square
 
